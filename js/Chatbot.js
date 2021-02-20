@@ -54,12 +54,13 @@ function output(input){
 
     if (compare(trigger, reply, text)) {
     product = compare(trigger, reply, text);
-  } else if (text.match(/robot/gi)) {
-    product = robot[Math.floor(Math.random() * robot.length)];
-  } else {
-    product = alternative[Math.floor(Math.random() * alternative.length)];
-  }
+    } else if (text.match(/robot/gi)) {
+        product = robot[Math.floor(Math.random() * robot.length)];
+    } else {
+        product = alternative[Math.floor(Math.random() * alternative.length)];
+    }
 
+  
   //update DOM
   addChat(input, product);
 }
