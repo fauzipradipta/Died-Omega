@@ -8,19 +8,19 @@ import operator
 
 #READ CSV FILE AND PUT CONTENTS INTO A LIST, ALL LINES WITHIN LIST
 
-url1 = 'https://raw.githubusercontent.com/gheniabla/datasets/master/companylist-1.csv'
-response1 = urllib.request.urlopen(url1)
-lines = [l.decode('utf-8') for l in response1.readlines()]
-cr1 = csv.reader(lines)
+#url1 = 'https://raw.githubusercontent.com/gheniabla/datasets/master/companylist-1.csv'
+#response1 = urllib.request.urlopen(url1)
+#lines = [l.decode('utf-8') for l in response1.readlines()]
+#cr1 = csv.reader(lines)
 
-line_count = 0
-data=[]
-for line in cr1:
-	line_count += 1
-	if line_count == 1:
-		header = line
-		continue
-	data.append(line)
+#line_count = 0
+#data=[]
+#for line in cr1:
+#	line_count += 1
+#	if line_count == 1:
+#		header = line
+#		continue
+#	data.append(line)
 
 #PUT DATA INTO A CSV FILE
 
@@ -43,10 +43,18 @@ for line in cr1:
 #if Found == "false":
 #    print("Not Found")
 
-with open('test.csv', 'a') as csvDATA:
-        employee_writer = csv.writer(csvDATA, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        employee_writer.writerow(['John Smith', 'Accounting', 'November'])
-        employee_writer.writerow(['Erica Meyers', 'IT', 'March'])
+@app.route('/')
+def home():
+    return 'TEST'
+
+@app.route('/test')
+def home():
+    return 'TESTING FLASK '
+
+#with open('test.csv', 'a') as csvDATA:
+#        employee_writer = csv.writer(csvDATA, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+#        employee_writer.writerow(['John Smith', 'Accounting', 'November'])
+#        employee_writer.writerow(['Erica Meyers', 'IT', 'March'])
 
 
 @app.route('/signup', methods = ['GET', 'POST'])
@@ -68,7 +76,7 @@ def signup():
 #        employee_writer.writerow(['Erica Meyers', 'IT', 'March'])
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debbug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 #csvfile.close()
 #csvfile2.close()

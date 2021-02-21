@@ -1,18 +1,17 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
 
-{% block content %}
+  <body>
+     <h1>Enter data?</h1>
+    <form method="POST" action = "/send_data">
+      <div class = "form-group">
+        <input type="text" name = "pay">
+      </div>
+      <input class="btn btn-primary" type="submit" value="Pay Now">
+    </form>
 
-<h2> Sign Up </h2>
-<form action="" method="post">
-  <p>
-    {{form.username.label}} <br>
-    {{form.username(size=30)}}
-  </p>
-  <p>
-    {{form.password.label}} <br>
-    {{form.password(size=30)}}
-  </p>
-  <p>{{form.submit()}}</p>
-</form>
-
-{% endblock %}
+  </body>
+</html>
