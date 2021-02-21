@@ -1,66 +1,49 @@
+var known = [
+				["hello", "hi"],
+				["i am *", "are you *?"],
+				["say * please", "*"],
+				["say *", "say please"],
+			];
 
-const trigger =[
-    ["hi", "hey","hello"],
-    ["How are you", "how are things"],
-    ["What is going on", "what is up"],
-    ["happy", "good", "well","fantastic", "cool"],
-    ["bad", "bored", "tired", "sad"],
-    ["tell me story", "tell me joke"],
-    ["thanks", " thank you"],
-    ["bye", "good bye", "goodbye"]
-];
+			var input = document.querySelector('input');
+			var output = document.querySelector('div');
 
-const reply =[
-    ["Hello", "Hi", "Hey", "Hi There"],
+			function postChat(text, poster) {
+				var bubble = document.createElement("p");
+				bubble.innerText = text;
+				bubble.className = poster;
+				output.appendChild(bubble);
+			}
 
-    [
-      "Fine... how are you?",
-      "Pretty well, how are you?", 
-      "Fantastic, how are you?"
-    ],
-    
-    [ "Nothing much", "Exciting things!",
-      "Exciting things!"
-    ],
+			function respond() {
+				var text = input.value;
+				input.value = "";
+				postChat(text, "user");
+				var response = think(text);
+				postChat(response, "bot");
+			}
 
-]
+			function filter(text) {
+				text = text.toLowerCase();
+				return(text);
+			}
 
-const robot = ["How do you do, fellow human", "I am not a bot"];
+			function think(user) {
+				user = filter(user);
 
-document.addEventListener("DOMContentLoaded", () => {
-    const inputField = document.getElementById("input")
-    inputField.addEventListener("keydown", function(e){
-        if(e.code === "Enter"){
-            let input = inputField.value;
-            inputField.value = "";
-            output(input);
-            // console.log(`I typed '$(input)'`);
-        }
-    });
-});
+				for (var [key, value] of known) {
+					if (key.includes('*')) {
+						key = key.split('*');
 
-function output(input){
-
-    let product;
-    //remove all characters except word characters, space and digits
-    let text = input.toLowerCase().replace(/[^\w\s]/gi, "").replace(/[\d]/gi, "").trim();
-    
-    text = text 
-    .replace(/ a/g, "")
-    .replace(/ i feel /g, "")
-    .replace(/whats/g, "what is")
-    .repalce(/ please/g, "");
-
-
-    if (compare(trigger, reply, text)) {
-    product = compare(trigger, reply, text);
-    } else if (text.match(/robot/gi)) {
-        product = robot[Math.floor(Math.random() * robot.length)];
-    } else {
-        product = alternative[Math.floor(Math.random() * alternative.length)];
-    }
-
-  
-  //update DOM
-  addChat(input, product);
-}
+						if (user.startsWith(key[0]) && user.endsWith(key[1])) {
+							var firstIndex = key[0].length;
+							var finalIndex = user.lastIndexOf(key[1]);
+							var custom = user.slice(firstIndex, finalIndex);
+							return(value.replace('*', custom));
+						}
+					} else if (user == key) {
+						return(value);
+					}
+				}
+				return("What?");
+			}
