@@ -44,7 +44,7 @@ body{
     margin: 0 10px 0 0;
     width: 30px;
     height: 30px;
-    background: url("images\arrow.png") no-repeat 8px 7px #6db5ff;
+    background: url(images\arrow.png) no-repeat 8px 7px #6db5ff;
     border-radius: 50%;
     float: left;
     transition: all .5s ease-in;    
@@ -57,6 +57,7 @@ body{
     font-weight: normal;
     color: #1f5c9a;
     transition: all .5s ease-in;
+    width: auto;
 }
 
 .active .icon{
@@ -64,7 +65,7 @@ body{
 }
 
 .active{
-    background-color: #6db5ff;
+    background-color: #fd1313;
     color: #fff;
 }
 
