@@ -29,9 +29,9 @@ body{
 }
 
 .accordion{
-    width: 100px;
+    width: 200px;
     padding: 0 5px;
-    border: 2px solid #6db5ff;
+    border: 2px solid #ff1919;
     cursor: pointer;
     border-radius: 50px;
     display: flex;
@@ -51,7 +51,7 @@ body{
 }
 
 .accordion h5{
-    font-size: 22px;
+    font-size: 20px;
     margin:0px;
     padding: 3px 0 0 0;
     font-weight: normal;
@@ -65,7 +65,7 @@ body{
 }
 
 .active{
-    background-color: #fd1313;
+    background-color: #6db5ff;
     color: #fff;
 }
 
@@ -74,7 +74,7 @@ body{
 }
 .panel{
     padding: 0 15px;
-    border-left: 1px solid #6db5ff;
+    border-left: 1px solid #ff2525;
     margin-left: 25px;
     font-size: 14px;
     text-align: justify;    
