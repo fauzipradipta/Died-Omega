@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mapping Page</title>
+<link rel="stylesheet" href="buttons.css" />
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
 		--web-view-name: Mapping Page;
@@ -596,6 +597,9 @@
 		overflow: visible;
 		width: 147px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: VirtualAssistant.html;
 		line-height: 32px;
 		margin-top: -8px;
 		text-align: left;
@@ -613,6 +617,9 @@
 		overflow: visible;
 		width: 68px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Mapping_Page.html;
 		line-height: 32px;
 		margin-top: -8px;
 		text-align: left;
@@ -630,6 +637,9 @@
 		overflow: visible;
 		width: 103px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: LiveUpdates.html;
 		line-height: 32px;
 		margin-top: -8px;
 		text-align: left;
@@ -3651,13 +3661,13 @@ window.application = new Application();
 	<div onclick="application.goToTargetView(event)" id="Home_">
 		<span>Home </span>
 	</div>
-	<div id="Virtual_Assistance__">
+	<div onclick="application.goToTargetView(event)" id="Virtual_Assistance__">
 		<span>Virtual Assistance </span><br>
 	</div>
-	<div id="Mapping_fl">
+	<div onclick="application.goToTargetView(event)" id="Mapping_fl">
 		<span>Mapping</span>
 	</div>
-	<div id="Live_Updates">
+	<div onclick="application.goToTargetView(event)" id="Live_Updates">
 		<span>Live Updates</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="InformationResources">

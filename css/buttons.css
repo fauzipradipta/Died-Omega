@@ -1,5 +1,5 @@
-.button {
-    background-color: #4CAF50; /* Green */
+.buttonz {
+    background-color: #8c363e; /* red */
     border: none;
     color: white;
     padding: 20px;
@@ -11,3 +11,9 @@
     font-size: 18px;
     width: 100%;
   }
+
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+}

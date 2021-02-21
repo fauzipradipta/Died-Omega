@@ -5,7 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COVID RESOURCE WEBSITE</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/buttons.css" />
 <style id="applicationStylesheet" type="text/css">
+
 	.mediaViewInfo {
 		--web-view-name: COVID RESOURCE WEBSITE;
 		--web-view-id: COVID_RESOURCE_WEBSITE;
@@ -102,12 +105,16 @@
 		overflow: visible;
 		width: 191px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: VirtualAssistant.html;
+		cursor: pointer;
 		text-align: center;
 		font-family: Lao MN;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 25px;
-		color: rgba(247,247,247,1);
+		color: rgba(251,251,251,1);
 	}
 	#Mapping {
 		left: 393px;
@@ -120,7 +127,7 @@
 		--web-action-type: page;
 		--web-action-target: Mapping_Page.html;
 		cursor: pointer;
-		text-align: left;
+		text-align: center;
 		font-family: Lao MN;
 		font-style: normal;
 		font-weight: normal;
@@ -134,7 +141,10 @@
 		overflow: visible;
 		width: 140px;
 		white-space: nowrap;
-		text-align: left;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: LiveUpdates.html;
+		text-align: center;
 		font-family: Lao MN;
 		font-style: normal;
 		font-weight: normal;
@@ -152,7 +162,7 @@
 		--web-action-type: page;
 		--web-action-target: Information_Resourcees.html;
 		cursor: pointer;
-		text-align: left;
+		text-align: center;
 		font-family: Lao MN;
 		font-style: normal;
 		font-weight: normal;
@@ -3237,7 +3247,7 @@ window.application = new Application();
 </head>
 <body>
 <div id="COVID_RESOURCE_WEBSITE">
-	<img id="Rectangle_3" src="Rectangle_3.png" srcset="Rectangle_3.png 1x">
+	<img id="Rectangle_3" src="images/back.png" srcset="images/back2.png">
 		
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="347" height="1080">
@@ -3249,13 +3259,13 @@ window.application = new Application();
 	<div id="___">
 		<span><br/><br/></span><br>
 	</div>
-	<div id="Virtual_Assistant">
+	<div onclick="application.goToTargetView(event)" id="Virtual_Assistant">
 		<span>Virtual Assistant</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="Mapping">
 		<span>Mapping</span>
 	</div>
-	<div id="Live_Update">
+	<div onclick="application.goToTargetView(event)" id="Live_Update">
 		<span>Live Update</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="Information_Resources">
@@ -3263,6 +3273,9 @@ window.application = new Application();
 	</div>
 	<div id="Copyright_2021_Sachacks_Team_D">
 		<span>Copyright 2021<br/>Sachacks Team Died Omega</span><br>
+		<div class="Copyright_2021_Sachacks_Team_D">
+			<a href="http://127.0.0.1:5000/signup" class="buttonz">COVID-19 SURVEY</a>
+		</div>
 	</div>
 	<div id="Component_1__1" class="Component_1___1">
 		<div id="Scroll_Group_1">
@@ -3314,7 +3327,7 @@ window.application = new Application();
 			</path>
 		</svg>
 	</div>
-	<img id="Virus_Image" src="Virus_Image.png" srcset="Virus_Image.png 1x">
+	<img id="Virus_Image" src="images/back.png" srcset="images/back2.png">
 		
 </div>
 </body>

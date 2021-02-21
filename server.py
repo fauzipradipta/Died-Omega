@@ -9,6 +9,20 @@ import operator
 header = ['Age', 'Underlying', 'Fever', 'ShortnessOfBreath', 'LossOfTaste', 'SoreThroat', 'RiskFactor', 'Submit']
 data = []
 
+url1 = 'https://raw.githubusercontent.com/gheniabla/datasets/master/companylist-1.csv'
+response1 = urllib.request.urlopen(url1)
+lines = [l.decode('utf-8') for l in response1.readlines()]
+cr1 = csv.reader(lines)
+
+line_count = 0
+data=[]
+for line in cr1:
+	line_count += 1
+	if line_count == 1:
+		header = line
+		continue
+	data.append(line)
+
 @app.route('/')
 def home():
     return 'TEST'
