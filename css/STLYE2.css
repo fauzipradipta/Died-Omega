@@ -1,0 +1,389 @@
+	.mediaViewInfo {
+		--web-view-name: COVID RESOURCE WEBSITE;
+		--web-view-id: COVID_RESOURCE_WEBSITE;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: COVID_RESOURCE_WEBSITE;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#COVID_RESOURCE_WEBSITE {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(247,247,247,1);
+		overflow: hidden;
+		--web-view-name: COVID RESOURCE WEBSITE;
+		--web-view-id: COVID_RESOURCE_WEBSITE;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Rectangle_3 {
+		position: absolute;
+		width: 1920px;
+		height: 1920px;
+		left: 0px;
+		top: -440px;
+		overflow: visible;
+	}
+	#Rectangle_1 {
+		fill: rgba(140,54,62,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 347px;
+		height: 1080px;
+		left: 271px;
+		top: 0px;
+	}
+	#COVID__Information_Center {
+		left: 338px;
+		top: 324px;
+		position: absolute;
+		overflow: visible;
+		width: 215px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(248,247,247,1);
+	}
+	#___ {
+		left: 396px;
+		top: 354px;
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		color: rgba(0,0,0,1);
+	}
+	#Virtual_Assistant {
+		left: 350px;
+		top: 547px;
+		position: absolute;
+		overflow: visible;
+		width: 191px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(247,247,247,1);
+	}
+	#Mapping {
+		left: 393px;
+		top: 631px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Mapping_Page.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(251,251,251,1);
+	}
+	#Live_Update {
+		left: 375px;
+		top: 715px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(251,251,251,1);
+	}
+	#Information_Resources {
+		left: 306px;
+		top: 799px;
+		position: absolute;
+		overflow: visible;
+		width: 279px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Information_Resourcees.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(251,251,251,1);
+	}
+	#Copyright_2021_Sachacks_Team_D {
+		left: 313px;
+		top: 929px;
+		position: absolute;
+		overflow: visible;
+		width: 265px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lao MN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(251,251,251,1);
+	}
+	#Component_1__1 {
+		position: absolute;
+		width: 347px;
+		height: 50px;
+		left: 284.5px;
+		top: 519.5px;
+		overflow: visible;
+	}
+	#Scroll_Group_1 {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 343px;
+		height: 1px;
+		left: -4.983px;
+		top: 1.5px;
+		overflow: hidden;
+	}
+	#Line_1 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		width: 347px;
+		height: 3px;
+		left: -17px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__2 {
+		position: absolute;
+		width: 347px;
+		height: 9px;
+		left: 284.5px;
+		top: 603.5px;
+		overflow: visible;
+	}
+	#Scroll_Group_1_v {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 343px;
+		height: 1px;
+		left: -4.983px;
+		top: 1.5px;
+		overflow: hidden;
+	}
+	#Line_1_w {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1_w {
+		overflow: visible;
+		position: absolute;
+		width: 347px;
+		height: 3px;
+		left: -17px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__3 {
+		position: absolute;
+		width: 347px;
+		height: 50px;
+		left: 284.5px;
+		top: 687.5px;
+		overflow: visible;
+	}
+	#Scroll_Group_1_y {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 343px;
+		height: 1px;
+		left: -4.983px;
+		top: 1.5px;
+		overflow: hidden;
+	}
+	#Line_1_z {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1_z {
+		overflow: visible;
+		position: absolute;
+		width: 347px;
+		height: 3px;
+		left: -17px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__4 {
+		position: absolute;
+		width: 347px;
+		height: 50px;
+		left: 284.5px;
+		top: 771.5px;
+		overflow: visible;
+	}
+	#Scroll_Group_1_ {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 343px;
+		height: 1px;
+		left: -4.983px;
+		top: 1.5px;
+		overflow: hidden;
+	}
+	#Line_1_ {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1_ {
+		overflow: visible;
+		position: absolute;
+		width: 347px;
+		height: 3px;
+		left: -17px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Component_1__5 {
+		position: absolute;
+		width: 347px;
+		height: 50px;
+		left: 284.5px;
+		top: 855.5px;
+		overflow: visible;
+	}
+	#Scroll_Group_1_ba {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 343px;
+		height: 1px;
+		left: -4.983px;
+		top: 1.5px;
+		overflow: hidden;
+	}
+	#Line_1_ba {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1_ba {
+		overflow: visible;
+		position: absolute;
+		width: 347px;
+		height: 3px;
+		left: -17px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_5 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_5 {
+		overflow: visible;
+		position: absolute;
+		width: 347.003px;
+		height: 2px;
+		left: 271.5px;
+		top: 1079.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Copyright_Symbol {
+		mix-blend-mode: normal;
+		position: absolute;
+		width: 24.442px;
+		height: 24.442px;
+		left: 340px;
+		top: 927px;
+		overflow: hidden;
+	}
+	#Icon_metro-copyright {
+		fill: rgba(247,247,248,1);
+	}
+	.Icon_metro-copyright {
+		overflow: visible;
+		position: absolute;
+		width: 26.442px;
+		height: 26.442px;
+		left: -1px;
+		top: -1px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Virus_Image {
+		position: absolute;
+		width: 263px;
+		height: 252px;
+		left: 313px;
+		top: 49px;
+		overflow: visible;
+	}
