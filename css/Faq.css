@@ -56,9 +56,21 @@ body{
     padding: 3px 0 0 0;
     font-weight: normal;
     color: #1f5c9a;
-
+    transition: all .5s ease-in;
 }
 
+.active .icon{
+    background: url("images/minus.png") no-repeat 8px -25px #fff;
+}
+
+.active{
+    background-color: #6db5ff;
+    color: #fff;
+}
+
+.active h5{
+    color: #fff;
+}
 .panel{
     padding: 0 15px;
     border-left: 1px solid #6db5ff;
@@ -66,6 +78,7 @@ body{
     font-size: 14px;
     text-align: justify;    
     overflow: hidden;
-    max-height: 0;
-    transform: all .5s ease-in;
+    max-height: 300px;
+    transition: all .5s ease-in;
 }
+
