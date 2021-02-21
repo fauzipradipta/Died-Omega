@@ -1,4 +1,4 @@
-age,underlying,fever,ShortnessofBreath,LossofTaste,SoreThroat,Risk Factor 
+age,underlying,fever,ShortnessofBreath,LossofTaste,SoreThroat,RiskFactor 
 95,0,0,0,0,0,5
 65,0,1,0,0,0,4
 31,1,0,0,0,1,2
